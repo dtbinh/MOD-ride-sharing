@@ -1,3 +1,6 @@
+//! authors: Chris Whong
+//! license: MIT
+
 var timeFactor = 1; //number of minutes in real life to a second in the viz
 $('.timeFactor').html(timeFactor); //Displays the timeFactor in the UI.
 var tweenToggle = 0;
