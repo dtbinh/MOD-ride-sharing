@@ -329,7 +329,7 @@ html,
     }
 
     .totalsBox p {
-        font-size: 20px;
+        font-size: 16px;
         margin-bottom: 0;
     } 
 
@@ -422,7 +422,7 @@ html,
 
     .time {
 
-        font-size: 3em;
+        font-size: 2em;
     }
 
     .readableTime {
@@ -432,7 +432,7 @@ html,
 
 
     .date {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .passengerGlyphs .glyphicon {
