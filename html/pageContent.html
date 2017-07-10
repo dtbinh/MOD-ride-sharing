@@ -9,7 +9,7 @@
 
     <link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css'  />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/page.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
 
 </head>
 <body>
@@ -29,14 +29,12 @@
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-road    "></span> On-Demand High-Capacity Ride-Sharing</a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><div class = "about">About</div></li>
-                    <li><div class = "asterisks">Asterisks</div></li>
                     <li><div class = "attribution">Attribution</div></li>
                    
                     
@@ -53,18 +51,18 @@
     <div class="container overlay">
         <div class="jumbotron">
             <h1>On-Demand High-Capacity Ride-Sharing</h1>
-            <p> For the first time, we quantify experimentally the trade-off between fleet size, capacity, waiting time, travel delay, and operational costs for low to medium capacity vehicles, such as taxis and van shuttles. The algorithm is validated with approximately 3 million rides extracted from the New York City taxicab public dataset. Our experimental study considers ride sharing with rider capacity
-of up to ten simultaneous passengers per vehicle. The algorithm applies to fleets of autonomous vehicles and also
-incorporates  rebalancing  of  idling  vehicles  to  areas  of  high  demand.  This  framework  is  general  and  can  be  used
-for many real-time multi-vehicle, multi-task assignment problems..</p><br/>
+            <p> For the first time, we quantify experimentally the trade-off between fleet size, capacity, waiting time, travel delay, 
+                and operational costs for low to medium capacity vehicles, such as taxis and van shuttles. The algorithm is validated with 
+                approximately 3 million rides extracted from the New York City taxicab public dataset. Our experimental study considers 
+                ride sharing with rider capacity of up to ten simultaneous passengers per vehicle. The algorithm applies to fleets of autonomous 
+                vehicles and also incorporates  rebalancing  of  idling  vehicles  to  areas  of  high  demand.  This  framework  is  general  
+                and  can  be  used for many real-time multi-vehicle, multi-task assignment problems.</p>
+            <br/>
             <p class = 'text-center'><a id = "begin" class="btn btn-primary btn-lg" role="button">Begin <span class="glyphicon glyphicon-play"></span></a></p>
             <br/>
-            <p style = 'font-size:16px'>A Special Thanks goes out to <a href = "http://www.mapbox.com">Mapbox</a> and <a href = "http://www.heroku.com">Heroku</a> for assistance with covering the surge of activity when this project was first released in 2014. </p>
-            <p style = 'font-size:16px'> Here's <a href = "http://chriswhong.com/data-visualization/taxitechblog1/">Technical Blog Post #1</a> and <a href = "http://chriswhong.com/open-data/taxi-techblog-2-leaflet-d3-and-other-frontend-fun/">#2</a> about how this visualization was built. </p>
-            <div class = "badges">
-            <a href = "http://www.informationisbeautifulawards.com/news/49-2014-the-winners"><img src = "img/kantariib.png"></a>
-            <a href = "http://www.andresmh.com/nyctaxitrips/"><img src = "img/getDataButton.png"></a>
-            </div>
+            <p style = 'font-size:16px'>A Special Thanks goes out to <a href = "http://www.mapbox.com">Mapbox</a> and <a href = "http://www.heroku.com">Heroku</a> for assistance. </p>
+            <p style = 'font-size:16px'> For more information about the algorithm, you can refer to this <a href = "http://www.dcsc.tudelft.nl/~jalonsomora/docs/17-alonsomora-ridesharing-pnas.pdf">PNAS Article</a> and this <a href = "http://www.dcsc.tudelft.nl/~jalonsomora/docs/17-alonsomora-ridesharing-pnas-supplemental.pdf">Publication</a>. </p>
+           
         </div>
     </div>
     <div class = 'container popup aboutPopup'>
@@ -73,42 +71,38 @@ for many real-time multi-vehicle, multi-task assignment problems..</p><br/>
         <h3 class="panel-title">About</h3><span class="glyphicon glyphicon-remove"></span>
       </div>
       <div class="panel-body">
-      <strong><p>NYC Taxis: A Day in the Life - A Data Visualization by <a href = "http://chriswhong.com">Chris Whong</a></p></strong>
+      <strong><p>On-Demand High-Capacity Ride-Sharing </p></strong>
+          <h2> A visualization of research on <a href = "http://www.dcsc.tudelft.nl/~jalonsomora/docs/17-alonsomora-ridesharing-pnas-supplemental.pdf">On-demand high-capacity ride-sharing via dynamic trip-vehicle assignment</a> 
+              by Javier Alonso-Mora, Samitha Samaranayake, Alex Wallar, Emilio Frazzoli and Daniela Rus.
+          </h2>
 
-        <p>This civic technology project visualizes <a href = "http://www.andresmh.com/nyctaxitrips/">taxi trip data from 2013</a>, showing the activities of a single taxi on a single day.  The original data include ~170 Million trips. Of these, 30 cab/days were queried at random for inclusion in this project. The data were provided by the <a href = "http://www.nyc.gov/html/tlc/html/home/home.shtml">Taxi and Limousine Commission</a> via a <a href = "http://chriswhong.com/open-data/foil_nyc_taxi/">FOIL request.</a></p> 
-        <p>
-            The intent is to analyze running counts of fares, taxes, etc, over the course of a day, and to see how/when taxis move around New York. 
+        <p> Ride-sharing services are transforming urban mobility by providing timely and convenient transportation to anybody, anywhere,
+        and anytime. These services present enormous potential for positive societal impacts with respect to pollution, energy consumption, 
+        congestion, etc. Current mathematical models, however, do not fully address the potential of ride-sharing. Recently, a large-scale 
+        study highlighted some of the benefits of car pooling but was limited to static routes with two riders per vehicle (optimally) or three (with heuristics). 
+        We present a more general mathematical model for real-time high-capacity ride-sharing that (i) scales to large numbers of passengers and trips and 
+        (ii) dynamically generates optimal routes with respect to online demand and vehicle locations. The algorithm starts from a greedy assignment and improves 
+        it through a constrained optimization, quickly returning solutions of good quality and converging to the optimal assignment over time. We quantify 
+        experimentally the trade-off between fleet size, capacity, waiting time, travel delay, and operational costs for low- to medium-capacity vehicles, such as
+        taxis and van shuttles. 
+         </p>
+         <p> 
+          The algorithm is validated with ∼3 million rides extracted from the New York City taxicab public dataset. Our experimental study considers ride-sharing 
+          with rider capacity of up to 10 simultaneous passengers per vehicle. The algorithm applies to fleets of autonomous vehicles and also incorporates
+          rebalancing of idling vehicles to areas of high demand. This framework is general and can be used for many real-time multivehicle,
+          multitask assignment problems.
+         
         </p>
-        <p>
-            The raw data include only start and end locations for each trip.  These points were run through Google's Directions API to create the routes shown in this visualization.  Of course, these are Google's best choice, not necessarily the one the taxi took.
-        </p>
-        <p>Support Civic Hacking and Open Data! </p>
-        <p>Check out <a href = "http://www.betanyc.us">BetaNYC</a>, New York City's Civic Hacking Community.</p>
-        <p><a href = "https://github.com/chriswhong/taxitracker">Code on Github</a></p>
-        <img src = "http://i.creativecommons.org/l/by-sa/3.0/88x31.png">
+        <p><a href = "https://github.com/dannyhecht/MOD-ride-sharing">Github Repository</a></p>
+        
          <br/>
          <br/>
-         <a href="https://twitter.com/chris_whong" class="twitter-follow-button" data-show-count="false">Follow @chris_whong</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+       
 
       </div>
     </div>
     </div>
-    <div class = 'container popup asterisksPopup'>
-        <div class="panel panel-primary">
-      <div class="panel-heading">
-        <h3 class="panel-title">Asterisks</h3><span class="glyphicon glyphicon-remove"></span>
-      </div>
-      <div class="panel-body">
-        <h4>Here are some gotchas:</h4>
-        <ul>
-            <li><strong>Trip Routes</strong> are a result of passing the start and end locations to the <a href = "https://developers.google.com/maps/documentation/directions/">Google Directions API</a>.  They are a possible route that the taxi took, but should not be assumed to be accurate.</li>
-            <li><strong>Empty Taxis</strong> also follow the "best route" between a dropoff and the next pickup.  Just as with the trips, this is just an effective way to move the marker around, but doesn't reflect the reality of where the taxi traveled. </li>
-            <li><strong>Tips</strong> are only reported in the data for credit card transactions.  Cash tips are not included. </li>
-        </ul>
-      </div>
-    </div>
-    </div>
+   
     <div class = 'container popup attributionPopup'>
         <div class="panel panel-primary">
       <div class="panel-heading">
@@ -125,7 +119,7 @@ for many real-time multi-vehicle, multi-task assignment problems..</p><br/>
             <a href = "http://www.mapbox.com">Mapbox</a> for super-simple subdued basemap tiles, and for releasing a totally sweet node package for converting Google Encoded Polylines into raw Coordinates.
             </li>
             <li>
-            Thanks to <a href = "http://www.reddit.com/r/bigquery/comments/28ialf/173_million_2013_nyc_taxi_rides_shared_on_bigquery/">u/fhoffa on Reddit</a> for importing the data into BigQuery helping me with the custom query I needed to pull full days of data for random taxis.
+            Thanks to <a href = "https://github.com/chriswhong/nyctaxi">u/fhoffa Chris Whong </a> and his Github Repo NYC Taxis: A Day in the Life, for helping me get started on producing this visualization.
             </li>
 
             
@@ -143,23 +137,23 @@ for many real-time multi-vehicle, multi-task assignment problems..</p><br/>
         <div>Time Factor: <span class = "timeFactor"></span> minutes per second</div>
     </div>
     <div class="legendBox box">
-        <div class = "boxHeader"><span class="glyphicon glyphicon-map-marker"></span> Legend</div>
+        <div class = "boxHeader"> Legend</div>
         <div class = 'legendItem'>
         <svg>
-            <circle r="5" id="marker" transform="translate(20,20)"></circle>
-        </svg><p>Full Taxi</p></div>
+            <circle r="5" class="rebalancing" transform="translate(20,20)"></circle>
+        </svg><p>Non-Empty Taxi</p></div>
         <div class = 'legendItem'>
         <svg>
-            <circle r="20" id="marker" transform="translate(20,20)" style="opacity:0.30000000000000004"></circle>
-        </svg><p>Empty Taxi<sup>*</sup></p></div>
+            <circle r="20" class="rebalancing" transform="translate(20,20)" style="opacity:0.30000000000000004"></circle>
+        </svg><p>Rebalancing Taxi<sup>*</sup></p></div>
         <div class = 'legendItem'>
         <svg>
-            <circle r="5" class="startPoint" transform="translate(20,20)"></circle>
-        </svg><p>Trip Start Point</p></div>
+            <div r = "5" class="star" transform="translate(20,20)"></div>
+        </svg><p>Request</p></div>
         <div class = 'legendItem'>
         <svg>
-            <circle r="5" class="endPoint" transform="translate(20,20)"></circle>
-        </svg><p>Trip End Point</p></div>
+            <div r="5" class="triangle" transform="translate(20,20)"></div>
+        </svg><p>Drop Off</p></div>
         <div class = 'legendItem'>
         <svg>
             <path class="trip true" style="opacity:.7" d="M10,10L30,30" ></path>
@@ -168,21 +162,19 @@ for many real-time multi-vehicle, multi-task assignment problems..</p><br/>
 
     <div class="newBox box">
      <button type="button" class="btn btn-default btn-lg reload">
-      <span class="glyphicon glyphicon-refresh"></span> Load Another Taxi!
+      <span class="glyphicon glyphicon-refresh"></span> Load Another Day
     </button>
     </div>
     <!--$: <span class = "runningFare">Test</span>-->
 
     <div class="totalsBox box">
-        <div class = "boxHeader"><span class="glyphicon glyphicon-dashboard"></span> Running Totals</div>
+        <div class = "boxHeader"> Results</div>
 
-        <p>Fares: <span class = "runningFare running"></span></p>
-        <p>Surcharge: <span class = "runningSurcharge running"></span></p>
-        <p>MTA Tax: <span class = "runningTax running"></span></p>
-        <p>Tips<sup>*</sup>: <span class = "runningTip running"></span></p>
-        <p class = "tolls">Tolls: <span class = "runningTolls running"></span></p>
-        <p>Total: <span class = "runningTotal running"></span></p>
-        <p>Passengers: <span class = "runningPassengers running"></span></p>
+        <p>Service Rate: <span class = "runningService running"></span></p>
+        <p>Waiting Time (s): <span class = "runningWaiting running"></span></p>
+        <p>In-Car Delay Time (s): <span class = "runningDelay running"></span></p>
+        <p>Occupancy: <span class = "runningPassengers running"></span></p>
+        <p> Travel Distance (km): <span class = "runningDistance running"></p>
         <div class = "passengerGlyphs"></div>
     </div>  
 
