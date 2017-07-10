@@ -306,13 +306,13 @@ html,
         position: absolute;
         top: 65px;
         left: 15px;
-        width: 300px;  
+        width: 260px;  
     }
      .legendBox {
         position: absolute;
         top: 220px;
         left: 15px;
-        width: 300px;  
+        width: 260px;  
     }
      .newBox {
         position: absolute;
@@ -325,7 +325,7 @@ html,
         position: absolute;
         top: 65px;
         right: 15px;
-        width: 300px;  
+        width: 260px;  
     }
 
     .totalsBox p {
@@ -353,13 +353,72 @@ html,
         font-size:2em;
     }
 
-    .startPoint {
-        fill:rgba(84, 255, 84, 0.64);
+    #rebalancing {
+        fill: #0000FF;
     }
 
-    .endPoint {
-        fill:rgba(219, 62, 62, 0.79);
+    .destination {
+        fill: #000000;
     }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border: solid 30px;
+        border-color: transparent transparent black transparent;
+    }
+
+    .star {
+       margin: 50px 0;
+       position: relative;
+       display: block;
+       color: black;
+       width: 0px;
+       height: 0px;
+       border-right:  100px solid transparent;
+       border-bottom: 70px  solid black;
+       border-left:   100px solid transparent;
+       -moz-transform:    rotate(35deg);
+       -webkit-transform: rotate(35deg);
+       -ms-transform:     rotate(35deg);
+       -o-transform:      rotate(35deg);
+    }
+    .star:before {
+       border-bottom: 80px solid black;
+       border-left: 30px solid transparent;
+       border-right: 30px solid transparent;
+       position: absolute;
+       height: 0;
+       width: 0;
+       top: -45px;
+       left: -65px;
+       display: block;
+       content: '';
+       -webkit-transform: rotate(-35deg);
+       -moz-transform:    rotate(-35deg);
+       -ms-transform:     rotate(-35deg);
+       -o-transform:      rotate(-35deg);
+
+    }
+    .star:after {
+       position: absolute;
+       display: block;
+       color: black;
+       top: 3px;
+       left: -105px;
+       width: 0px;
+       height: 0px;
+       border-right: 100px solid transparent;
+       border-bottom: 70px solid black;
+       border-left: 100px solid transparent;
+       -webkit-transform: rotate(-70deg);
+       -moz-transform:    rotate(-70deg);
+       -ms-transform:     rotate(-70deg);
+       -o-transform:      rotate(-70deg);
+       content: '';
+    }
+
+
 
     .time {
 
