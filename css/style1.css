@@ -1,15 +1,200 @@
-//! authors: Chris Whong
+//! Attribution: Chris Whong, KeenThemes (Project: Metronic "Asentus" Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4)
 //! license: MIT
 
 html,
     body {
+        -webkit-font-smoothing: antialiased;
         height: 100%;
         width: 100%;
     }
     body {
         margin: 0;
         color:#fff;
+        font-family: Hind, sans-serif;
     }
+
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      font-family: Hind, sans-serif;
+      color: #a6a7aa;
+      line-height: 1.4;
+      margin-bottom: 15px;
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      font-family: Hind, sans-serif;
+      color: #bfc1c7;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+      font-family: Hind, sans-serif;
+      color: #515769;
+      line-height: 1.4;
+      margin: 0 0 15px;
+    }
+
+    h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
+      color: #515769;
+    }
+
+    h1 > a:focus, h2 > a:focus, h3 > a:focus, h4 > a:focus, h5 > a:focus, h6 > a:focus {
+      text-decoration: none;
+    }
+
+    em,
+    li,
+    li a {
+        font-size: 16px;
+        font-weight: 500;
+        font-family: Hind, sans-serif;
+        color: #515769;
+    }
+
+    a {
+      font-family: Hind, sans-serif;
+      color: #81848f;
+      outline: 0;
+    }
+
+    a:focus, a:hover, a:active {
+      outline: 0;
+      color: #999caa;
+      text-decoration: none;
+    }
+
+    /* Section Seperator */
+    .section-seperator {
+      border-bottom: 1px solid #edf0f2;
+    }
+
+    /* Content Wrapper Link */
+    .content-wrapper-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      z-index: 3;
+      text-decoration: none;
+    }
+
+    /*------------------------------------------------------------------
+        [Header]
+    ------------------------------------------------------------------*/
+    /* Fixed Top */
+    .navbar-fixed-top .navbar-collapse {
+      max-height: 100%;
+    }   
+    
+    .navbar-inverse .navbar-brand {
+        color: #333;
+    }
+
+    .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+        color: #000;
+    }
+
+    .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+        color: #000;
+    }
+
+    /*------------------------------------------------------------------
+        [Button]
+    ------------------------------------------------------------------*/
+    .btn-theme {
+      position: relative;
+      display: inline-block;
+      line-height: 1.4;
+      text-align: center;
+      background-image: none;
+      border-style: solid;
+      white-space: nowrap;
+      vertical-align: middle;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .btn-theme:focus, .btn-theme:active:focus, .btn-theme.active:focus, .btn-theme.focus, .btn-theme:active.focus, .btn-theme.active.focus {
+      outline: none;
+    }
+    .btn-theme:hover {
+      transition-duration: 300ms;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+    }
+
+    .btn-theme:hover, .btn-theme:focus, .btn-theme.focus {
+      text-decoration: none;
+    }
+
+    .btn-theme:active, .btn-theme.active {
+      background-image: none;
+      outline: 0;
+    }
+
+    .btn-theme.disabled, .btn-theme[disabled],
+    fieldset[disabled] .btn-theme {
+      cursor: not-allowed;
+      box-shadow: none;
+      opacity: .65;
+      pointer-events: none;
+    }
+
+    .btn-white-brd {
+      color: #fff;
+      background: transparent;
+      border-color: rgba(255, 255, 255, 0.3);
+      border-width: 1px;
+    }
+
+    .btn-white-brd:hover, .btn-white-brd:focus, .btn-white-brd.focus {
+      color: #515769;
+      background: #fff;
+      border-color: transparent;
+    }
+
+    .btn-default-bg {
+      color: #515769;
+      background: #f3f4f5;
+      border-color: transparent;
+      border-width: 0;
+    }
+
+    .btn-default-bg:hover, .btn-default-bg:focus, .btn-default-bg.focus {
+      color: #fff;
+      background: #17bed2;
+      border-color: transparent;
+    }
+
+    .btn-base-bg {
+      color: #fff;
+      background: #17bed2;
+      border-color: transparent;
+      border-width: 0;
+    }
+
+    .btn-base-bg:hover, .btn-base-bg:focus, .btn-base-bg.focus {
+      color: #fff;
+      background: #63cbd7;
+      border-color: transparent;
+    }
+
+    .btn-theme-sm {
+      font-size: 13px;
+      font-weight: 600;
+      padding: 15px 30px;
+    }
+
     #map {
 
         top: 50px;
@@ -67,9 +252,8 @@ html,
         fill: #000;
     }
 
-
     .navbar-inverse {
-        background-color:#F1F100;
+        background-color:#120193;
     }
 
     .overlay {
@@ -85,18 +269,28 @@ html,
  
     }
 
-    .popup {
-        position: relative;
-        top: 50%;
-        bottom: 0;
-        height: auto;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        color: #333333;
-        width: 60%;
-        z-index: 410;;
-        display:none;
+    .popup-bck{
+      background-color: #daa520;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      z-index: 10;
+    }
+
+    .popup-content-box{
+      background-color: white;
+      position: fixed;
+      margin: 0px auto;
+      top: 50%;
+      left: 50%;
+      z-index: 11;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     }
 
     .areaChartBox {
@@ -195,17 +389,6 @@ html,
         stroke:yellow;
     }
 
-    .navbar-inverse .navbar-brand {
-        color: #333;
-    }
-
-    .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
-        color: #000;
-    }
-
-    .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
-        color: #000;
-    }
 
     .legendItem svg {
         height: 40px;
