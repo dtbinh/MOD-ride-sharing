@@ -32,13 +32,13 @@ html,
     h1, h2, h3, h4, h5, h6 {
       font-weight: 700;
       font-family: Hind, sans-serif;
-      color: #515769;
+      color: #543535;
       line-height: 1.4;
       margin: 0 0 15px;
     }
 
     h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
-      color: #515769;
+      color: #543535;
     }
 
     h1 > a:focus, h2 > a:focus, h3 > a:focus, h4 > a:focus, h5 > a:focus, h6 > a:focus {
@@ -51,18 +51,18 @@ html,
         font-size: 16px;
         font-weight: 500;
         font-family: Hind, sans-serif;
-        color: #515769;
+        color: #543535;
     }
 
     a {
       font-family: Hind, sans-serif;
-      color: #81848f;
+      color: #540105;
       outline: 0;
     }
 
     a:focus, a:hover, a:active {
       outline: 0;
-      color: #999caa;
+      color: #9b9899;
       text-decoration: none;
     }
 
@@ -82,27 +82,6 @@ html,
       z-index: 3;
       text-decoration: none;
     }
-
-    /*------------------------------------------------------------------
-        [Header]
-    ------------------------------------------------------------------*/
-    /* Fixed Top */
-    .navbar-fixed-top .navbar-collapse {
-      max-height: 100%;
-    }   
-    
-    .navbar-inverse .navbar-brand {
-        color: #333;
-    }
-
-    .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
-        color: #000;
-    }
-
-    .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
-        color: #000;
-    }
-
     /*------------------------------------------------------------------
         [Button]
     ------------------------------------------------------------------*/
@@ -225,7 +204,7 @@ html,
     #marker {
         fill: yellow;
     }
-
+    
    
     .areaChart {
         position: absolute;
@@ -253,7 +232,7 @@ html,
     }
 
     .navbar-inverse {
-        background-color:#120193;
+        background-color:#f7f7f9;
     }
 
     .overlay {
@@ -264,35 +243,24 @@ html,
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        color:#333333;
+        color:#070707;
         z-index: 410;
  
     }
 
-    .popup-bck{
-      background-color: #daa520;
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      top: 0px;
-      left: 0px;
-      z-index: 10;
+    .popup {
+        position: relative;
+        top: 50%;
+        bottom: 0;
+        height: auto;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        color: #333333;
+        width: 60%;
+        z-index: 410;;
+        display:none;
     }
-
-    .popup-content-box{
-      background-color: white;
-      position: fixed;
-      margin: 0px auto;
-      top: 50%;
-      left: 50%;
-      z-index: 11;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    }
-
     .areaChartBox {
         position: absolute;
         bottom:38px;
@@ -447,7 +415,17 @@ html,
     .markerLine {
         stroke:yellow;
     }
+    .navbar-inverse .navbar-brand {
+        color: #333;
+    }
 
+    .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+        color: #000;
+    }
+
+    .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+        color: #000;
+    }
 
     .legendItem svg {
         height: 40px;
