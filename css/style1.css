@@ -15,7 +15,7 @@ html,
 
     p {
       font-size: 15px;
-      font-weight: 400;
+      font-weight: 300;
       font-family: Hind, sans-serif;
       color: #a6a7aa;
       line-height: 1.4;
@@ -24,13 +24,13 @@ html,
 
     span {
       font-size: 14px;
-      font-weight: 400;
+      font-weight: 300;
       font-family: Hind, sans-serif;
       color: #bfc1c7;
     }
 
     h1, h2, h3, h4, h5, h6 {
-      font-weight: 700;
+      font-weight: 600;
       font-family: Hind, sans-serif;
       color: #543535;
       line-height: 1.4;
@@ -49,7 +49,7 @@ html,
     li,
     li a {
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 400;
         font-family: Hind, sans-serif;
         color: #543535;
     }
