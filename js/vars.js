@@ -14,14 +14,15 @@ var topLeft,bottomRight;
 var time = moment();
 var map = L.map('map',{ zoomControl:false })
 .addLayer(tiles)
-.setView([40.7127, -74.0059], 14);
+.setView([40.7831, 73.9712], 14);
 
 
 var running = {
+    "service":0,
     "waiting":0,
     "delay":0,
-    "capacity":0,
-    "passengers":0
+    "passengers":0,
+    "distance":0
 } ;
 
 
@@ -126,7 +127,7 @@ $('.faster').click(function(){
 });
 
 $('.reload').click(function(){
-    location.reload();
+    Date.reload();
 });
 
 $('.about').click(function(){
@@ -324,12 +325,11 @@ function transition(path) {
     .each("end", function (d) {
 
         if(d.properties.hasfare) {
-
+            running.service += parseFloat(d.properties.service);
             running.waiting += parseFloat(d.properties.waiting);
             running.delay += parseFloat(d.properties.delay);
-            running.capacity += parseFloat(d.properties.capacity);
             running.passengers += parseFloat(d.properties.passengers);
-
+            running.distance += parseFloat(d.properties.distance);
 
 
             for(var p = 0;p<d.properties.passengers;p++){
@@ -444,8 +444,8 @@ $('#begin').click(function(){
 function updateRunning() {
     $('.runningWaiting').text('$'+running.waiting.toFixed(2));
     $('.runningDelay').text('$'+running.delay.toFixed(2));
-    $('.runningCapacity').text('$'+running.capacity.toFixed(2));
     $('.runningPassengers').text(running.passengers);
+    $('.runningDistance').text('$'+running.distance.toFixed(2));
 }
 
 // Reposition the SVG to cover the features.
