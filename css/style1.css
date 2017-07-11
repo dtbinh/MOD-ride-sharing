@@ -10,17 +10,17 @@ html,
     body {
         margin: 0;
         color:#fff;
-        font-family: Hind, sans-serif;
+        
     }
 
     span {
       font-size: 14px;
-      font-family: Hind, sans-serif;
+      
       color: #bfc1c7;
     }
 
     h1, h2, h3, h4, h5, h6 {
-      font-family: Hind, sans-serif;
+      
       color: #543535;
       line-height: 1.4;
       
