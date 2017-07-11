@@ -68,6 +68,20 @@ html,
       z-index: 3;
       text-decoration: none;
     }
+    #panel {
+                position: absolute;
+                top: 5px;
+                left: 50%;
+                width: 500px;
+                margin-left: -180px;
+                z-index: 5;
+                background-color: #fff;
+                padding: 5px;
+                border: 1px solid #999;
+    }
+    .largeSlider {
+                width:500px;
+    }
     
     #map {
 
