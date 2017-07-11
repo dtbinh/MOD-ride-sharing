@@ -1,5 +1,6 @@
-//! Attribution: Chris Whong, KeenThemes (Project: Metronic "Asentus" Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4)
-//! license: MIT
+/* Attribution: Chris Whong, KeenThemes (Project: Metronic "Asentus" Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4)
+ license: MIT
+*/
 
 html,
     body {
@@ -7,10 +8,6 @@ html,
         width: 100%;
        }
 
-    .container{
-        height:100%;
-        width: 100%;   
-    }
         
     body {
         margin: 0;
@@ -19,15 +16,6 @@ html,
         
     }
 
-    .overlay {
-      margin: 5px;
-      position: absolute;
-      top: -50px;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      
-   }
 
     span {
       font-size: 14px;
@@ -172,6 +160,7 @@ html,
         z-index: 410;
  
     }
+
 
     .popup {
         position: relative;
