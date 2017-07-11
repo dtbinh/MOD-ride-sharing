@@ -5,7 +5,7 @@ html,
     body {
         height: 100%;
         width: 100%;
-        padding-bottom: 50px;
+        
     }
     body {
         margin: 0;
@@ -19,7 +19,6 @@ html,
       font-family: Hind, sans-serif;
       color: #a6a7aa;
       line-height: 1.4;
-      margin-bottom: 15px;
     }
 
     span {
@@ -34,7 +33,7 @@ html,
       font-family: Hind, sans-serif;
       color: #543535;
       line-height: 1.4;
-      margin: 0 0 15px;
+      
     }
 
     h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
