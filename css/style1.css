@@ -38,13 +38,10 @@ html,
     li,
     li a {
         font-size: 16px;
-        font-weight: 400;
-        font-family: Hind, sans-serif;
         color: #543535;
     }
 
     a {
-      font-family: Hind, sans-serif;
       color: #540105;
       outline: 0;
     }
@@ -172,13 +169,13 @@ html,
         position: absolute;
         top: 65px;
         left: 15px;
-        width: 260px;  
+        width: 300px;  
     }
      .legendBox {
         position: absolute;
         top: 220px;
         left: 15px;
-        width: 260px;  
+        width: 300px;  
     }
      .newBox {
         position: absolute;
@@ -191,7 +188,7 @@ html,
         position: absolute;
         top: 65px;
         right: 15px;
-        width: 260px;  
+        width: 300px;  
     }
 
     .totalsBox p {
