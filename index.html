@@ -13,6 +13,14 @@
 
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=174160066065207&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
 
@@ -22,7 +30,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-road    "></span> On-Demand High-Capacity Ride-Sharing</a>
+                <a class="navbar-brand" href="#">   "></span> On-Demand High-Capacity Ride-Sharing</a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
@@ -64,9 +72,9 @@
       </div>
       <div class="panel-body">
       <strong><p>On-Demand High-Capacity Ride-Sharing </p></strong>
-          <h2> A visualization of research on <a href = "http://www.dcsc.tudelft.nl/~jalonsomora/docs/17-alonsomora-ridesharing-pnas-supplemental.pdf">On-demand high-capacity ride-sharing via dynamic trip-vehicle assignment</a> 
+          <h4> A visualization of <a href = "http://www.dcsc.tudelft.nl/~jalonsomora/docs/17-alonsomora-ridesharing-pnas-supplemental.pdf">On-demand high-capacity ride-sharing via dynamic trip-vehicle assignment</a> 
               by Javier Alonso-Mora, Samitha Samaranayake, Alex Wallar, Emilio Frazzoli and Daniela Rus.
-          </h2>
+          </h4>
 
         <p> Ride-sharing services are transforming urban mobility by providing timely and convenient transportation to anybody, anywhere,
         and anytime. These services present enormous potential for positive societal impacts with respect to pollution, energy consumption, 
@@ -85,7 +93,7 @@
           multitask assignment problems.
          
         </p>
-        <p><a href = "https://github.com/dannyhecht/MOD-ride-sharing">Github Repository</a></p>
+        <p><a href = "https://github.com/dannyhecht/MOD-ride-sharing">Code behind the visualization </a></p>
         
          <br/>
          <br/>
@@ -121,7 +129,7 @@
     </div>
     <div class="dateTimeBox box">
         <div class = "date"></div> 
-        <div class = "time"> <span class = "readableTime"></span></div> 
+        <div class = "time"> <span class="glyphicon glyphicon-time"></span> <span class = "readableTime"></span></div> 
         <div class= "controls">
             <button type="button" class="btn btn-default btn-xs slower"><span class="glyphicon glyphicon-backward"></span> Slower</button>
             <button type="button" class="btn btn-default btn-xs faster">Faster <span class="glyphicon glyphicon-forward"></span> </button>   
@@ -132,11 +140,11 @@
         <div class = "boxHeader"> Legend</div>
         <div class = 'legendItem'>
         <svg>
-            <circle r="5" class="rebalancing" transform="translate(20,20)"></circle>
+            <circle r="5" id="rebalancing" transform="translate(20,20)"></circle>
         </svg><p>Non-Empty Taxi</p></div>
         <div class = 'legendItem'>
         <svg>
-            <circle r="20" class="rebalancing" transform="translate(20,20)" style="opacity:0.30000000000000004"></circle>
+            <circle r="20" id="rebalancing" transform="translate(20,20)" style="opacity:0.30000000000000004"></circle>
         </svg><p>Rebalancing Taxi<sup>*</sup></p></div>
         <div class = 'legendItem'>
         <svg>
