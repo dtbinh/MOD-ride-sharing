@@ -12,7 +12,7 @@ html,
     body {
         margin: 0;
         color:#fff;
-        position: relative;
+        position: absolute;
         
     }
 
