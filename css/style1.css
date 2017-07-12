@@ -45,6 +45,7 @@ html,
     li,
     li a {
         font-size: 16px;
+        font-weight: 400;
         color: #543535;
     }
 
@@ -151,9 +152,6 @@ html,
  
     }
 
-    .jumbotron{
-      background = transparent;
-    }
 
 
     .popup {
