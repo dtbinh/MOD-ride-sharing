@@ -11,23 +11,26 @@ html,
         
     body {
         margin: 0;
-        color:#fff;
-        
-        
+        color:#fff;   
     }
 
-
+    p {
+     font-size: 14px;
+     font-weight: 300;
+     color: #a6a7aa;
+     line-height: 1.4;
+        }
+ 
     span {
-      font-size: 14px;
-      
-      color: #bfc1c7;
-    }
-
+       font-size: 14px;
+       font-weight: 300;
+       color: #bfc1c7;
+     }
+ 
     h1, h2, h3, h4, h5, h6 {
-      
+      font-weight: 600;
       color: #543535;
       line-height: 1.4;
-      
     }
 
     h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
