@@ -14,6 +14,34 @@ html,
         color:#fff;   
     }
 
+    #map {
+
+        top: 50px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        width: auto;
+        height: auto;
+    }
+
+    svg {
+        position: relative;
+    }
+    path {
+        fill: none;
+        stroke-width: 4px;
+    }
+
+    path.true {
+        stroke:#3366FF;
+    }
+
+    path.false {
+        stroke:#990099;
+        display:none;
+    }
+
     p {
      font-size: 14px;
      font-weight: 300;
@@ -77,33 +105,7 @@ html,
       text-decoration: none;
     }
     
-    #map {
-
-        top: 50px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        position: absolute;
-        width: auto;
-        height: auto;
-        z-index: 420;
-    }
-    svg {
-        position: relative;
-    }
-    path {
-        fill: none;
-        stroke-width: 4px;
-    }
-
-    path.true {
-        stroke:#3366FF;
-    }
-
-    path.false {
-        stroke:#990099;
-        display:none;
-    }
+  
 
     #marker {
         fill: yellow;
