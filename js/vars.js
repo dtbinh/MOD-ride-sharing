@@ -127,7 +127,7 @@ $('.faster').click(function(){
 });
 
 $('.reload').click(function(){
-    time.reload();
+    location.reload();
 });
 
 $('.about').click(function(){
