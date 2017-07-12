@@ -41,13 +41,7 @@ html,
         stroke:#990099;
         display:none;
     }
- 
-    span {
-       font-size: 14px;
-       font-weight: 300;
-       color: #bfc1c7;
-     }
- 
+
     h1, h2, h3, h4, h5, h6 {
       font-weight: 600;
       color: #543535;
