@@ -55,7 +55,12 @@
         </div>
     </div>
  
-    <div id = "map"> 
+    <div id = "map">
+    <script>
+     L.mapbox.accessToken = 'pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmYW9tNmoifQ.FetU2-IBDcrhTmSKBpFIfA';
+     var map = L.mapbox.map('map', 'mapbox.streets')
+      .setView([40.758896, -73.985130], 15);
+     </script>
  </div>
 
     <div class="container overlay">
@@ -206,7 +211,10 @@
     <script src="js/moment.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://d3js.org/d3.v4.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+ <!--
     <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js'></script>
+-->
     <script src="js/vars.js"></script>
 
     <script>
