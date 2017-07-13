@@ -86,7 +86,7 @@
      .menu-ui {
        background:#fff;
        position:absolute;
-       top:10px;right:10px;
+       top:10px;right:15px;
        z-index:1;
        border-radius:3px;
        width:120px;
@@ -129,8 +129,8 @@
      var layers = document.getElementById('menu-ui');
 
      addLayer(L.mapbox.tileLayer('mapbox.streets'), 'Base Map', 1);
-     addLayer(L.mapbox.tileLayer('examples.bike-lanes'), 'Bike Lanes', 2);
-     addLayer(L.mapbox.tileLayer('mapbox.satellite'), 'Satellite', 3);
+     addLayer(L.mapbox.tileLayer('examples.bike-lanes'), 'High-Demand Location', 2);
+     
 
      function addLayer(layer, name, zIndex) {
          layer
