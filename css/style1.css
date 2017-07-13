@@ -137,6 +137,7 @@ html,
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
+        color: #543535;
         z-index: 410;
  
     }
