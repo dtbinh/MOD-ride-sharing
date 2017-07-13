@@ -130,7 +130,7 @@
 
      addLayer(L.mapbox.tileLayer('mapbox.streets'), 'Base Map', 1);
      addLayer(L.mapbox.tileLayer('mapbox.oneway'), 'High-Demand Areas', 2);
-     addLayer(L.mapbox.tileLayer('mapbox.major_rail'), 'Public Transport Stations', 3);
+     addLayer(L.mapbox.tileLayer('mapbox.rail-metro'), 'Public Transport Stations', 3);
      
 
      function addLayer(layer, name, zIndex) {
@@ -180,7 +180,7 @@
             <p class = 'text-center'><a id = "begin" class="btn btn-primary btn-lg active" role="button">Enter</a></p>
            -->
 
-            <button onclick="self.close()">Load Data</button>
+            <button onclick="overlay.close()">Load Data</button>
             
             <br/>
             <br/>
