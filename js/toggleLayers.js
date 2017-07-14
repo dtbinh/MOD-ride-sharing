@@ -18,7 +18,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmY
          // toggles layers on and off.
          var link = document.createElement('a');
              link.href = '#';
-             link.className = '';
+             link.className = 'active';
              link.innerHTML = name;
 
          link.onclick = function(e) {
