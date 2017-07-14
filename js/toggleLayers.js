@@ -1,6 +1,6 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmYW9tNmoifQ.FetU2-IBDcrhTmSKBpFIfA';
      
-     var map = L.mapbox.map('map')
+     
      var layers = document.getElementById('menu-ui');
 
      addLayer(L.mapbox.tileLayer('mapbox.satellite'), 'Satellite', 1); //traffic-night-v2
