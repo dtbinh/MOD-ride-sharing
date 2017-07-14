@@ -10,7 +10,7 @@ var imageUrl = '/Users/dhecht/Desktop/sim.png',
 imageBounds = L.latLngBounds([
   [40.6994, -73.9064],
   [40.8782, -74.0190]]);
-var map = L.mapbox.map('map', 'mapbox.mapbox-streets-v7')
+var map = L.mapbox.map('map', 'mapbox.streets')
   .fitBounds(imageBounds);
        // See full documentation for the ImageOverlay type:
        // http://leafletjs.com/reference.html#imageoverlay
