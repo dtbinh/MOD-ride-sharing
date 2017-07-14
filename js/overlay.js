@@ -12,7 +12,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmY
         [40.8782, -74.0190]]);
       var map = L.mapbox.map({
             container: 'map', 
-            style: 'mapbox://styles/mapbox/traffic-night-v2'
+            style: 'mapbox.traffic-night-v2'
              })
         .fitBounds(imageBounds);
              // See full documentation for the ImageOverlay type:
