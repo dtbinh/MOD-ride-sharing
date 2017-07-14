@@ -1,3 +1,4 @@
+
  <!--   authors: Chris Wong
         license: MIT
  -->
@@ -30,14 +31,16 @@
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    
                 </button>
                 <a class="navbar-brand" href="#"> On-Demand High-Capacity Ride-Sharing</a>
             </div>
-         
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><div class = "about">About</div></li>
                     <li><div class = "attribution">Attribution</div></li>
+                   
+                    
                 </ul>
             </div> 
 
@@ -46,31 +49,29 @@
         </div>
     </div>
  
-    <div id = "map"> </div>
+    <div id = "map">
     <script>
-    L.mapbox.accessToken = 'pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmYW9tNmoifQ.FetU2-IBDcrhTmSKBpFIfA';
+     L.mapbox.accessToken = 'pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmYW9tNmoifQ.FetU2-IBDcrhTmSKBpFIfA';
      var map = L.mapbox.map({
       container:'map', 
-      style:  'mapbox.streets', // previously 'mapbox..mapbox-streets-v7'
+      style:  'mapbox.mapbox-streets-v7', // previously 'mapbox.streets'
       center: [40.758896, -73.985130],
       zoom: 13
       });
       
      </script>
     
-    
+    <script src = "js/overlay.js"></script>
      
      <nav id='menu-ui' class='menu-ui'></nav>
-     
+     <div id='map'></div>
 
-     
-     <script src = "js/baseLayers.js"></script>
      <script src = "js/toggleLayers.js"></script>
      
-     
-<!--
+ </div>
  
     <div class="container overlay">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
     
         <div class="jumbotron">
             <h2>On-Demand High-Capacity Ride-Sharing</h2>
@@ -82,7 +83,7 @@
                 and  can  be  used for many real-time multi-vehicle, multi-task assignment problems.</p>
             <br/>
           
-            <button type="button" class="overlay-close">Close</button>
+           <button type="button" class="overlay-close">Close</button>
           
             <br/>
             <br/>
@@ -92,7 +93,7 @@
         </div>
     </div>
 
--->
+
     <div class = 'container popup aboutPopup'>
         <div class="panel panel-primary">
       <div class="panel-heading">
