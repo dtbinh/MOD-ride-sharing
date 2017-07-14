@@ -14,7 +14,7 @@ var topLeft,bottomRight;
 var time = moment();
 var map = L.map('map',{ zoomControl:false })
 .addLayer(tiles)
-.setView([40.7831, -73.9712], 13);
+.setView([40.7831, -73.9712], 11.5);
 
 
 var running = {
