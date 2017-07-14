@@ -56,8 +56,16 @@
       container:'map', 
       style:  'mapbox.mapbox-streets-v7', // previously 'mapbox.streets'
       center: [40.758896, -73.985130],
-      zoom: 13
-      });
+      zoom: 13,
+      sources: {
+        "mapbox-streets": {
+          "type": "vector",
+          "url": "mapbox://mapbox.mapbox-streets-v7"
+          }
+      }
+
+
+     });
       
      </script>
     
