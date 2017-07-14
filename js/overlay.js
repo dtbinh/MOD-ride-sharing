@@ -10,7 +10,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmY
       imageBounds = L.latLngBounds([
         [40.6994, -73.9064],
         [40.8782, -74.0190]]);
-      var map = L.mapbox.map('map', 'mapbox.streets')
+      var map = L.mapbox.map('map', 'mapbox.mapbox-streets-v7')
         .fitBounds(imageBounds);
              // See full documentation for the ImageOverlay type:
              // http://leafletjs.com/reference.html#imageoverlay
