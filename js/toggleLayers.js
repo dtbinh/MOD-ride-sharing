@@ -1,10 +1,5 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmYW9tNmoifQ.FetU2-IBDcrhTmSKBpFIfA';
-     var map = L.mapbox.map({
-          container:'map', 
-          style:  'mapbox.mapbox-streets-v7', // previously 'mapbox.streets'
-          center: [40.758896, -73.985130],
-          zoom: 13
-     });
+     
 
      var layers = document.getElementById('menu-ui');
 
