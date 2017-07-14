@@ -3,10 +3,10 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmY
      
      var layers = document.getElementById('menu-ui');
 
-     addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/traffic-day-v2'), 'Traffic Day',1); //traffic-night-v2
-     addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/traffic-night-v2'), 'Traffic Night',2); //traffic-night-v2
-     addLayer(L.mapbox.tileLayer('mapbox.oneway'), 'High-Demand Areas', 3);
-     addLayer(L.mapbox.tileLayer('mapbox.rail-metro'), 'Public Transport Stations', 4);
+     addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/traffic-day-v2'), 'Traffic Day',4); //traffic-night-v2
+     addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/traffic-night-v2'), 'Traffic Night',3); //traffic-night-v2
+     addLayer(L.mapbox.tileLayer('mapbox.oneway'), 'High-Demand Areas', 2);
+     addLayer(L.mapbox.tileLayer('mapbox.rail-metro'), 'Public Transport Stations', 1);
     
 
      function addLayer(layer, name, zIndex) {
