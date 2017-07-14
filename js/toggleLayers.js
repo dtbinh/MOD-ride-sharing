@@ -7,6 +7,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmY
      addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/traffic-night-v2'), 'Traffic Night',2); //traffic-night-v2
      addLayer(L.mapbox.tileLayer('mapbox.oneway'), 'High-Demand Areas', 3);
      addLayer(L.mapbox.tileLayer('mapbox.rail-metro'), 'Public Transport Stations', 4);
+    
 
      function addLayer(layer, name, zIndex) {
          layer
@@ -17,7 +18,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmY
          // toggles layers on and off.
          var link = document.createElement('a');
              link.href = '#';
-             link.className = 'active';
+             link.className = '';
              link.innerHTML = name;
 
          link.onclick = function(e) {
