@@ -12,9 +12,17 @@ var tiles = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/traffic-day-v2/
 var topLeft,bottomRight;
 
 var time = moment();
-var map = L.map('map',{ zoomControl:false })
-.addLayer(tiles)
-.setView([40.7831, -73.9712], 11.5);
+// var map = L.map('map',{ zoomControl:false })
+// .addLayer(tiles)
+// .setView([40.7831, -73.9712], 11.5);
+
+L.mapbox.accessToken = 'pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmYW9tNmoifQ.FetU2-IBDcrhTmSKBpFIfA';
+var map = L.mapbox.map({
+    container:'map', 
+    style:  'mapbox.traffic-day-v2', 
+    center: [40.758896, -73.985130],
+    zoom: 13,
+ });
 
 
 var running = {
