@@ -359,12 +359,12 @@ html,
      }
 
      .panel-custom {
-         border-color: #fff;
+         border-color: #601918;
      }
      .panel-custom > .panel-heading {
-         background: #fff; 
+         background: #601918; 
          color: #fff;
-         border-color: #fff;
+         border-color: #601918;
      }
       
      .panel-heading>.glyphicon {
