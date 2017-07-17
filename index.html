@@ -12,7 +12,7 @@
 
     <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
     <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style1.css">
     
@@ -28,7 +28,6 @@
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    
                 </button>
                 <a class="navbar-brand" href="#"> On-Demand High-Capacity Ride-Sharing</a>
             </div>
@@ -36,28 +35,23 @@
                 <ul class="nav navbar-nav">
                     <li><div href="#" class = "about">About</div></li>
                     <li><div href="#" class = "attribution">Attribution</div></li>
-                   
-                    
                 </ul>
             </div> 
-
-
-
         </div>
     </div>
  
-    <div id = "map">
+    <!-- <div id = "map"> -->
     <script>
      L.mapbox.accessToken = 'pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmYW9tNmoifQ.FetU2-IBDcrhTmSKBpFIfA';
      var map = L.mapbox.map({
       container:'map', 
       style:  'mapbox.traffic-day-v2', // previously 'mapbox.mapbox-streets-v7'
       center: [40.758896, -73.985130],
-      zoom: 13,
+      zoom: 12,
      });
      </script>
     
-     <script src = "js/overlay.js"></script>  
+     <!-- <script src = "js/overlay.js"></script>  -->
      
      <nav id='menu-ui' class='menu-ui'></nav>
      <div id='map'></div>
