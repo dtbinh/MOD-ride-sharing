@@ -14,5 +14,5 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmY
         .fitBounds(imageBounds);
              // See full documentation for the ImageOverlay type:
              // http://leafletjs.com/reference.html#imageoverlay
-      var overlay = L.imageOverlay(imageUrl, imageBounds)
+      var imageOverlay = L.imageOverlay(imageUrl, imageBounds)
          .addTo(map);
