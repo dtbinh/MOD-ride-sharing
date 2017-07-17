@@ -54,27 +54,50 @@
      g = svg.append("g").attr("class");
   
      map.on('load', function () {
+    // We use D3 to fetch the JSON here so that we can parse and use it separately
+    // from GL JS's use in the added source. You can use any request method (library
+    // or otherwise) that you want.
+    d3.json('https://www.mapbox.com/mapbox-gl-js/assets/data/hike.geojson', function(err, data) {
+        if (err) throw err;
 
-       map.addLayer({
-        'id': 'urban-areas-fill',
-        'type': 'fill',
-        'source': {
-            'type': 'geojson',
-            'data': 'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_urban_areas.geojson'
-         },
-        'layout': {},
-        'paint': {
-            'fill-color': '#f08',
-            'fill-opacity': 0.4
-         }
-        // This is the important part of this example: the addLayer
-        // method takes 2 arguments: the layer as an object, and a string
-        // representing another layer's name. if the other layer
-        // exists in the stylesheet already, the new layer will be positioned
-        // right before that layer in the stack, making it possible to put
-        // 'overlays' anywhere in the layer stack.
-       }, 'water');
-     });
+        // save full coordinate list for later
+        var coordinates = data.features[0].geometry.coordinates;
+
+        // start by showing just the first coordinate
+        data.features[0].geometry.coordinates = [coordinates[0]];
+
+        // add it to the map
+        map.addSource('trace', { type: 'geojson', data: data });
+        map.addLayer({
+            "id": "trace",
+            "type": "line",
+            "source": "trace",
+            "paint": {
+                "line-color": "yellow",
+                "line-opacity": 0.75,
+                "line-width": 5
+            }
+        });
+
+        // setup the viewport
+        map.jumpTo({ 'center': coordinates[0], 'zoom': 14 });
+        map.setPitch(30);
+
+        // on a regular basis, add more coordinates from the saved list and update the map
+        var i = 0;
+        var timer = window.setInterval(function() {
+            if (i < coordinates.length) {
+                data.features[0].geometry.coordinates.push(coordinates[i]);
+                map.getSource('trace').setData(data);
+                map.panTo(coordinates[i]);
+                i++;
+            } else {
+                window.clearInterval(timer);
+            }
+        }, 10);
+    });
+});
+</script>
 </script>
     
      <script src = "js/imageOverlay.js"></script>
@@ -83,7 +106,7 @@
      <!-- <div id='map'></div> -->
 
      <script src = "js/toggleLayers.js"></script>
-     <script src = "js/featureLayers.js"></script>
+  <!-- <script src = "js/featureLayers.js"></script> -->
      
     
 
