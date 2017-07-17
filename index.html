@@ -27,6 +27,7 @@
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#"> On-Demand High-Capacity Ride-Sharing</a>
             </div>
@@ -34,6 +35,7 @@
                 <ul class="nav navbar-nav">
                     <li><div href="#" class = "about">About</div></li>
                     <li><div href="#" class = "attribution">Attribution</div></li>
+                    <li><div href="#" class = "news">In the News
                 </ul>
             </div> 
         </div>
@@ -67,29 +69,28 @@
       <div class="jumbotron">
             <p><a class="btn btn-default" href="#" role="button">x</a></p>
             <h2>On-Demand High-Capacity Ride-Sharing</h2>
-            <p> For the first time, this study quantifies experimentally the trade-off between fleet size, capacity, waiting time, travel delay, 
-                and operational costs for low to medium capacity vehicles, such as taxis and van shuttles. The algorithm used to produce this visualization has been validated with 
-                approximately 3 million rides extracted from the New York City taxicab public dataset. Our experimental study considers 
-                ride sharing with rider capacity of up to ten simultaneous passengers per vehicle. Our algorithm applies to fleets of autonomous 
-                vehicles and also incorporates  rebalancing  of  idling  vehicles  to  areas  of  high  demand.  This  framework  is  general  
-                and  can  be  used for many real-time multi-vehicle, multi-task assignment problems.</p>
+            <h3> Can Sharing Rides Transform NYC's Fleet of 14,000 Taxis to 3,000?</h3>
+            <p> This visualization reveals the trade-off between fleet size, capacity, waiting time, travel delay, 
+                and operational costs for low to medium capacity vehicles, such as taxis and van shuttles, as based 
+                on an MIT study led by Led by Professor Daniela Rus of MIT’s Computer Science and Artificial Intelligence Laboratory (CSAIL). 
+                The results of this study show that 3,000 four-passenger cars could serve 98 percent of NYC taxi demand, suggesting that 
+                ride-sharing options have the potential to reduce congestion and limit pollution and energy usage.  </p>
             <br/>
             <br/>
             <br/>
             <p style = 'font-size:15px'>This visualzation was produced with the help of <a href = "http://www.mapbox.com">Mapbox</a>, <a href = "http://www.heroku.com">Heroku</a>, and Chris Whong's <a href = "https://github.com/chriswhong/nyctaxi">Github Repo NYC Taxis: A Day in the Life </a>. </p>
-            <p style = 'font-size:15px'> For more information about the algorithm, you can refer to our <a href = "http://www.dcsc.tudelft.nl/~jalonsomora/docs/17-alonsomora-ridesharing-pnas.pdf">PNAS Article</a> and our full <a href = "http://www.dcsc.tudelft.nl/~jalonsomora/docs/17-alonsomora-ridesharing-pnas-supplemental.pdf">Publication</a>. </p>
+            <p style = 'font-size:15px'> For more information about this study, you can refer to our <a href = "http://www.dcsc.tudelft.nl/~jalonsomora/docs/17-alonsomora-ridesharing-pnas.pdf">Proceedings of the National Academy of Sciences Article</a> and our <a href = "http://www.dcsc.tudelft.nl/~jalonsomora/docs/17-alonsomora-ridesharing-pnas-supplemental.pdf">full publication</a>. </p>
        </div>
     </div>
 -->
 
     <div class = 'container popup aboutPopup'>
-        <div class="panel panel-primary">
+        <div class="panel panel-custom">
       <div class="panel-heading">
         <h3 class="panel-title">About</h3><span class="glyphicon glyphicon-remove"></span>
       </div>
       <div class="panel-body">
-      <strong><p>A Ride-Sharing Visualization </p></strong>
-          <h5> Based on <strong><a href = "http://www.dcsc.tudelft.nl/~jalonsomora/docs/17-alonsomora-ridesharing-pnas-supplemental.pdf">On-demand high-capacity ride-sharing via dynamic trip-vehicle assignment</a></strong> 
+      <h5>A visualization based on the research into <a href = "http://www.dcsc.tudelft.nl/~jalonsomora/docs/17-alonsomora-ridesharing-pnas-supplemental.pdf">On-demand high-capacity ride-sharing via dynamic trip-vehicle assignment</a> 
               by Javier Alonso-Mora, Samitha Samaranayake, Alex Wallar, Emilio Frazzoli and Daniela Rus.
           </h5>
 
@@ -104,13 +105,13 @@
         taxis and van shuttles. 
          </p>
          <p> 
-          The algorithm is validated with ∼3 million rides extracted from the New York City taxicab public dataset. Our experimental study considers ride-sharing 
-          with rider capacity of up to 10 simultaneous passengers per vehicle. The algorithm applies to fleets of autonomous vehicles and also incorporates
-          rebalancing of idling vehicles to areas of high demand. This framework is general and can be used for many real-time multivehicle,
-          multitask assignment problems.
-       
+          The algorithm used to produce this visualization was validated with ∼3 million rides extracted from the New York City taxicab public dataset. Our experimental study considers ride-sharing 
+          with rider capacity of up to 10 simultaneous passengers per vehicle. It applies to fleets of autonomous vehicles and also incorporates
+          rebalancing of idling vehicles to areas of high demand. 
         </p>
-        <p><a href = "https://github.com/dannyhecht/MOD-ride-sharing">Code on Github </a></p>
+       
+       <p style = 'font-size:15px'> For more information about the algorithm, you can refer to our <a href = "http://www.dcsc.tudelft.nl/~jalonsomora/docs/17-alonsomora-ridesharing-pnas.pdf">Proceedings of the National Academy of Sciences Article</a> and our <a href = "http://www.dcsc.tudelft.nl/~jalonsomora/docs/17-alonsomora-ridesharing-pnas-supplemental.pdf">full publication</a>. </p>
+        <!-- <p><a href = "https://github.com/dannyhecht/MOD-ride-sharing">Code on Github </a></p> -->
         
          <br/>
          <br/>
@@ -121,7 +122,7 @@
     </div>
    
     <div class = 'container popup attributionPopup'>
-        <div class="panel panel-primary">
+        <div class="panel panel-custom">
       <div class="panel-heading">
         <h3 class="panel-title">Attribution</h3><span class="glyphicon glyphicon-remove"></span>
       </div>
@@ -129,16 +130,33 @@
 
         <ul>
             <li><a href = "http://bost.ocks.org/mike/leaflet/">Mike Bostock's D3 + Leaflet</a> - The foundation for throwing geoJSON onto Leaflet with external tiles.
-            </li>
-            <li><a href = "http://bl.ocks.org/KoGor/8163022">KoGor's Marker Animation Along SVG Path</a> - This technique made the animated cab marker work!
+         </li>
+            <li>
+            <a href = "http://www.mapbox.com">Mapbox</a> for all of the basemap styles, feature layers, and customizable tooltips.
             </li>
             <li>
-            <a href = "http://www.mapbox.com">Mapbox</a> for super-simple subdued basemap tiles, and for releasing a totally sweet node package for converting Google Encoded Polylines into raw Coordinates.
-            </li>
-            <li>
-            Thanks to <a href = "https://github.com/chriswhong/nyctaxi">u/fhoffa Chris Whong </a> and his Github Repo NYC Taxis: A Day in the Life, for helping me get started on producing this visualization.
+            Thanks to <a href = "https://github.com/chriswhong/nyctaxi">u/fhoffa Chris Whong </a> and his Github Repo NYC Taxis: A Day in the Life, for inspiring the creation of this visualization.
             </li>  
         </ul>
+      </div>
+    </div>
+    </div>
+     
+     <div class = 'container popup newsPopup'>
+        <div class="panel panel-custom">
+      <div class="panel-heading">
+        <h3 class="panel-title">In the News</h3><span class="glyphicon glyphicon-remove"></span>
+      </div>
+      <div class="panel-body">
+       <ul>
+         <li><a href = "https://www.citylab.com/transportation/2017/01/can-sharing-rides-cut-nycs-fleet-of-14000-taxis-to-3000/512057/">< Can Sharing Rides Cut NYC's Fleet of 14,000 Taxis to 3,000?></a>
+         </li>
+         <li><a href = "https://www.forbes.com/sites/janetwburns/2017/01/03/just-3000-ride-share-vehicles-could-replace-nycs-whole-taxi-fleet/#39376a475a01"><Just 3000 Ride-Share Vehicles Could Replace NYC's Whole Taxi Fleet></a>
+         </li>
+         <li><a href = "http://www.csail.mit.edu/ridesharing_and_traffic"><STUDY: CARPOOLING APPS COULD REDUCE TAXI TRAFFIC 75%></a>
+         </li> 
+       </ul>
+      
       </div>
     </div>
     </div>
