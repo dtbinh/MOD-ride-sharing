@@ -142,8 +142,8 @@ $('.about').click(function(){
     $('.aboutPopup').fadeIn();
 });
 
-$('.asterisks').click(function(){
-    $('.asterisksPopup').fadeIn();
+$('.news').click(function(){
+    $('.newsPopup').fadeIn();
 });
 
 $('.attribution').click(function(){
@@ -154,8 +154,8 @@ $('.aboutPopup .panel-heading>.glyphicon').click(function(){
     $('.aboutPopup').fadeOut();
 });
 
-$('.asterisksPopup .panel-heading>.glyphicon').click(function(){
-    $('.asterisksPopup').fadeOut();
+$('.newsPopup .panel-heading>.glyphicon').click(function(){
+    $('.newsPopup').fadeOut();
 });
 
 $('.attributionPopup .panel-heading>.glyphicon').click(function(){
