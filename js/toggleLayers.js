@@ -3,10 +3,10 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmY
      
      var layers = document.getElementById('menu-ui');
 
-     addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/traffic-day-v2'), 'Traffic Day',4); //traffic-night-v2
-     addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/traffic-night-v2'), 'Traffic Night',3); //traffic-night-v2
-     // addLayer(L.mapbox.tileLayer('mapbox.oneway'), 'High-Demand Areas', 2);
-     addLayer(L.mapbox.featureLayer('https://www.mapbox.com/mapbox.js/assets/data/stations.geojson'), 'Public Transport Stations', 1);
+     addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/traffic-day-v2'), 'Traffic Day',2); //traffic-night-v2
+     addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/traffic-night-v2'), 'Traffic Night',1); //traffic-night-v2
+     addLayer(L.mapbox.featureLayer('mapbox.oneway'), 'One-Way Streets', 4);
+     addLayer(L.mapbox.featureLayer('https://www.mapbox.com/mapbox.js/assets/data/stations.geojson'), 'Public Transport Stations', 3);
     
 
      function addLayer(layer, name, zIndex) {
