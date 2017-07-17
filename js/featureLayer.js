@@ -2,8 +2,9 @@
 
 // Since featureLayer is an asynchronous method, we use the `.on('ready'`
 // call to only use its marker data once we know it is actually loaded.
+
 L.mapbox.featureLayer()
-    .loadURL('/mapbox.js/assets/data/stations.geojson')
+    .loadURL('https://www.mapbox.com/mapbox.js/assets/data/stations.geojson')
     .on('ready', function(e) {
     // create a new MarkerClusterGroup that will show special-colored
     // numbers to indicate the type of rail stations it contains
