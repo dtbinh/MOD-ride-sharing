@@ -2,7 +2,7 @@
 
 
 L.mapbox.accessToken = 'pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmYW9tNmoifQ.FetU2-IBDcrhTmSKBpFIfA';
-      var imageUrl = '/Users/dhecht/Desktop/sim.png',
+      var imageUrl = 'file:///Users/dhecht/Desktop/sim.png',
             // This is the trickiest part - you'll need accurate coordinates for the
             // corners of the image. You can find and create appropriate values at
             // http://maps.nypl.org/warper/ or
