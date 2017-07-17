@@ -4,17 +4,16 @@
 var timeFactor = 1; //number of minutes in real life to a second in the viz
 $('.timeFactor').html(timeFactor); //Displays the timeFactor in the UI.
 var tweenToggle = 0;
-
-var tiles = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/traffic-day-v2/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmYW9tNmoifQ.FetU2-IBDcrhTmSKBpFIfA',{
-  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
-});
-
-var topLeft,bottomRight;
-
 var time = moment();
-// var map = L.map('map',{ zoomControl:false })
-// .addLayer(tiles)
-// .setView([40.7831, -73.9712], 11.5);
+
+/*
+ var tiles = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/traffic-day-v2/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmYW9tNmoifQ.FetU2-IBDcrhTmSKBpFIfA',{
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+ });
+
+ var map = L.map('map',{ zoomControl:false })
+ .addLayer(tiles)
+ .setView([40.7831, -73.9712], 11.5);
 
 L.mapbox.accessToken = 'pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmYW9tNmoifQ.FetU2-IBDcrhTmSKBpFIfA';
 var map = L.mapbox.map({
@@ -23,7 +22,9 @@ var map = L.mapbox.map({
     center: [40.758896, -73.985130],
     zoom: 13,
  });
+*/ 
 
+var topLeft,bottomRight;
 
 var running = {
     "service":0,
@@ -34,9 +35,8 @@ var running = {
 } ;
 
 
-
-var svg = d3.select(map.getPanes().overlayPane).append("svg"),
-g = svg.append("g").attr("class", "leaflet-zoom-hide");
+// var svg = d3.select(map.getPanes().overlayPane).append("svg"), //moved to index.html
+// g = svg.append("g").attr("class", "leaflet-zoom-hide");
 
 
 //area chart
