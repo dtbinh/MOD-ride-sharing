@@ -357,6 +357,15 @@ html,
          color: #000;
         cursor:pointer; 
      }
+
+     .panel-custom {
+         border-color: #fff;
+     }
+     .panel-custom > .panel-heading {
+         background: #fff; 
+         color: #ffffff;
+         border-color: #fff;
+     }
       
      .panel-heading>.glyphicon {
         float:right;
