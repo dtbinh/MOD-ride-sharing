@@ -35,8 +35,8 @@ var running = {
 } ;
 
 
-// var svg = d3.select(map.getPanes().overlayPane).append("svg"), //moved to index.html
-// g = svg.append("g").attr("class", "leaflet-zoom-hide");
+ var svg = d3.select(map.getPanes().overlayPane).append("svg"), //moved to index.html
+ g = svg.append("g").attr("class");
 
 
 //area chart
@@ -177,22 +177,19 @@ function updateTimer() {
 }
 
 //get a random number between 0 and 11
-var number = Math.floor(Math.random() * 15) 
+var number = Math.floor((Math.random() * 10) + 1) 
 
-d3.json('data/taxiday' + number + '.geojson', function (data) {
-
-    console.log("Loaded data for medallion: " + data.features[0].properties.medallion);
-
+d3.json('data/taxi' + number + '.geojson', function (data) {
 
     var feature = g.selectAll("path")
     .data(data.features)
     .enter().append("path")
     .attr("class", function (d) {
 
-        if (d.properties.hasfare == true) {
-            return "trip" + (d.properties.key * 2) + " " + d.properties.hasfare;
+        if (d.properties.fare_amount != 0.0) {
+            return "trip" +  " " + d.properties.fare_amount;
         } else {
-            return "trip" + ((d.properties.key * 2) + 1) + " " + d.properties.hasfare;
+            return "trip" + 1 + " " + d.properties.fare_amount;
         }
     })
     .attr("style", "opacity:0");
