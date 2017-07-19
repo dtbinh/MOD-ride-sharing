@@ -179,8 +179,9 @@ function updateTimer() {
 //get a random number between 0 and 11
 var number = Math.floor((Math.random() * 10) + 1) 
 
-d3.json('data/taxi' + number + '.geojson', function (data) {
-
+//d3.json('data/taxi' + number + '.geojson', function (data) {
+d3.json('data/test.geojson', function (data) {
+        
     var feature = g.selectAll("path")
     .data(data.features)
     .enter().append("path")
@@ -260,7 +261,7 @@ path.each(function(d){
 startPoint[0] = startPoint[0]; //+ topLeft[0];
 startPoint[1] = startPoint[1]; //+ topLeft[1];
 var newLatLon = coordToLatLon(startPoint);
-pointsArray.push([newLatLon.lng,newLatLon.lat,d.properties.hasfare]);
+pointsArray.push([newLatLon.lng,newLatLon.lat,d.properties.fare_amount]);
 
 
 points = g.selectAll(".point")
@@ -279,7 +280,7 @@ points = g.selectAll(".point")
     return translatePoint(d);  
 });
 
-if(d.properties.hasfare) { //transition marker to show full taxi
+if(d.properties.fare_amount != 0) { //transition marker to show full taxi
     marker
     .transition()
     .duration(500)
@@ -308,8 +309,8 @@ function transition(path) {
     path.transition()
     .duration(function(d){
         //calculate seconds
-        var start = Date.parse(d.properties.pickuptime),
-        finish = Date.parse(d.properties.dropofftime),
+        var start = Date.parse(d.properties.pickup_datetime),
+        finish = Date.parse(d.properties.dropoff_datetime),
         duration = finish - start;
 
         duration = duration/60000; //convert to minutes
@@ -317,7 +318,7 @@ function transition(path) {
         duration = duration * (1/timeFactor) * 1000;
 
 
-        time = moment(d.properties.pickuptime.toString());
+        time = moment(d.properties.pickup_datetime.toString());
 
 
 
@@ -329,15 +330,16 @@ function transition(path) {
     .attrTween("stroke-dasharray", tweenDash)
     .each("end", function (d) {
 
-        if(d.properties.hasfare) {
-            running.service += parseFloat(d.properties.service);
-            running.waiting += parseFloat(d.properties.waiting);
-            running.delay += parseFloat(d.properties.delay);
-            running.passengers += parseFloat(d.properties.passengers);
-            running.distance += parseFloat(d.properties.distance);
+        if(d.properties.fare_amount !=0) {
+            running.fare += parseFloat(d.properties.fare_amount);
+            //running.service += parseFloat(d.properties.service);
+            //running.waiting += parseFloat(d.properties.waiting);
+            //running.delay += parseFloat(d.properties.delay);
+            running.passengers += parseFloat(d.properties.passenger_count);
+            running.distance += parseFloat(d.properties.trip_distance);
 
 
-            for(var p = 0;p<d.properties.passengers;p++){
+            for(var p = 0;p<d.properties.passenger_count;p++){
                 $('.passengerGlyphs').append('<span class="glyphicon glyphicon-user"></span>');
             }
 
@@ -392,11 +394,11 @@ if(chartInterval == 5){
 
 
 
-    if(isNaN(d.properties.fare)){
-        d.properties.fare = 0; 
+    if(isNaN(d.properties.fare_amount)){
+        d.properties.fare_amount = 0; 
     }
 
-    var incrementalFare = d.properties.fare*t;
+    var incrementalFare = d.properties.fare_amount*t;
 
 
     dummyData.push({
@@ -406,7 +408,7 @@ if(chartInterval == 5){
 
 
 chartPath.attr("d", area); //redraw area chart
-if(d.properties.hasfare == false) { //draw purple area for nonfare time
+if(d.properties.fare_amount == 0) { //draw purple area for nonfare time
     emptyData.push({
         "time": decimalHour,
         "runningFare": running.fare + parseFloat(incrementalFare)
@@ -447,8 +449,9 @@ $('#begin').click(function(){
 
 
 function updateRunning() {
-    $('.runningWaiting').text('$'+running.waiting.toFixed(2));
-    $('.runningDelay').text('$'+running.delay.toFixed(2));
+    $('.runningFare').text('$+running.fare.toFixed(2));
+    //$('.runningWaiting').text('$'+running.waiting.toFixed(2));
+    //$('.runningDelay').text('$'+running.delay.toFixed(2));
     $('.runningPassengers').text(running.passengers);
     $('.runningDistance').text('$'+running.distance.toFixed(2));
 }
