@@ -442,7 +442,7 @@ $('#loadTaxis').click(function(){
     $('.overlay').fadeOut(250);
     $('.container').fadeOut(250);
     $('.jumbotron').fadeOut(250);
-    $(' this').fadeOut(250);
+    $( this).fadeOut(250);
     $('.box').fadeIn(250);
     setTimeout(function(){
         updateTimer();
