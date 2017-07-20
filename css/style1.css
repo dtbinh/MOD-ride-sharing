@@ -178,14 +178,14 @@ html,
     }
      .legendBox {
         position: absolute;
-        top: 200px;
+        top: 220px;
         left: 20px;
         width: 190px;
         z-index: 430;
     }
      .newBox {
         position: absolute;
-        bottom: 50px;
+        bottom: 40px;
         left: 15px;
         width: 190px;  
     }
