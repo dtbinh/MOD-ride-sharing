@@ -170,14 +170,14 @@ html,
 
     .dateTimeBox {
         position: absolute;
-        top: 65px;
+        top: 220px;
         left: 15px;
         width: 300px; 
         z-index: 430;
     }
      .legendBox {
         position: absolute;
-        top: 220px;
+        top: 65px;
         left: 15px;
         width: 300px;
         z-index: 430;
@@ -191,14 +191,14 @@ html,
 
     .totalsBox {
         position: absolute;
-        top: 65px;
-        right: 15px;
+        bottom: 65px;
+        left: 15px;
         width: 300px;
         z-index: 430;
     }
 
     .totalsBox p {
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 0;
     } 
 
@@ -319,6 +319,7 @@ html,
     }
     .navbar-inverse .navbar-brand {
         color: #333;
+        z-index: 99999999;
     }
 
     .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
