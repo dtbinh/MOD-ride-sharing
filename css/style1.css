@@ -216,6 +216,7 @@ html,
         box-sizing: border-box;
         border-radius: 6px;
         display:none;
+        z-index: 430;
     }
 
     .boxHeader {
