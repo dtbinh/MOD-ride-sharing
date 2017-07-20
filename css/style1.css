@@ -211,7 +211,7 @@ html,
     }
 
     .box {
-        background:rgba(0, 0, 0, 0.61);
+        background:rgba(130, 7, 7, 0.2);
         padding: 10px;
         box-sizing: border-box;
         border-radius: 6px;
