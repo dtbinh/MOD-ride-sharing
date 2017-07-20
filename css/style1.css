@@ -190,7 +190,7 @@ html,
 
     .totalsBox {
         position: absolute;
-        bottom: 65px;
+        bottom: 100px;
         left: 20px;
         width: 230px;
         z-index: 430;
