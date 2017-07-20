@@ -222,6 +222,7 @@ html,
 
     .boxHeader {
         font-size:2em;
+        color: rgb(40, 5, 5);
     }
 
     #rebalancing {
