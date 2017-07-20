@@ -183,7 +183,7 @@ html,
     }
      .newBox {
         position: absolute;
-        top: 448px;
+        top: 490px;
         left: 15px;
         width: 230px;  
     }
@@ -210,7 +210,7 @@ html,
     }
 
     .box {
-        background:rgba(130, 7, 7, 0.6);
+        background:rgba(249, 244, 244, 0.6);
         padding: 10px;
         box-sizing: border-box;
         border-radius: 6px;
