@@ -171,14 +171,14 @@ html,
 
     .dateTimeBox {
         position: absolute;
-        top: 450px;
+        top: 400px;
         left: 20px;
         width: 190px; 
         z-index: 430;
     }
      .legendBox {
         position: absolute;
-        top: 160px;
+        top: 140px;
         left: 20px;
         width: 190px;
         z-index: 430;
