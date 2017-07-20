@@ -5,7 +5,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiZGhlY2h0IiwiYSI6ImNqNHRueTVyeDA3ZmYyd3FuY2NmY
 
      addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/traffic-day-v2'), 'Traffic Day',1); //traffic-night-v2
      addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/traffic-night-v2'), 'Traffic Night',2); //traffic-night-v2
-     addLayer(L.mapbox.featureLayer('mapbox.oneway'), 'One-Way Streets', 4);
+     // addLayer(L.mapbox.featureLayer('mapbox.oneway'), 'One-Way Streets', 4);
      addLayer(L.mapbox.featureLayer('https://www.mapbox.com/mapbox.js/assets/data/stations.geojson'), 'Public Transport Stations', 3);
     
 
