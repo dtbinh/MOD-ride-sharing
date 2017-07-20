@@ -437,7 +437,7 @@ return i(t);
 
 updateRunning();
 
-$('#begin').click(function(){
+$('#loadTaxis').click(function(){
     $('.overlay').fadeOut(250);
     $('.container').fadeOut(250);
     $('.jumbotron').fadeOut(250);
