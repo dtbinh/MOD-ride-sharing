@@ -171,28 +171,28 @@ html,
         position: absolute;
         top: 350px;
         left: 20px;
-        width: 200px; 
+        width: 230px; 
         z-index: 430;
     }
      .legendBox {
         position: absolute;
-        top: 65px;
+        top: 100px;
         left: 20px;
-        width: 200px;
+        width: 230px;
         z-index: 430;
     }
      .newBox {
         position: absolute;
         top: 448px;
         left: 15px;
-        width: 200px;  
+        width: 230px;  
     }
 
     .totalsBox {
         position: absolute;
         bottom: 65px;
         left: 20px;
-        width: 200px;
+        width: 230px;
         z-index: 430;
     }
 
