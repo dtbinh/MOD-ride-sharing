@@ -3,7 +3,7 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {"type":"LineString","coordinates":[[-73.968862000000001,40.786090999999999],[-73.962042999999994,40.779451999999999]]},
       "properties": {
         "vendor_id": "CMT",
         "trip_distance": "0.59999999999999998",
@@ -28,7 +28,7 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {"type":"LineString","coordinates":[[-74.001660000000001,40.748497],[-73.999098000000004,40.738351999999999]]},
       "properties": {
         "vendor_id": "VTS",
         "trip_distance": "1.3700000000000001",
