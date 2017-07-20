@@ -143,7 +143,9 @@ html,
  
     }
 
-
+    .box p {
+     color: rgb(40, 5, 5);
+     }
 
     .popup {
         position: relative;
