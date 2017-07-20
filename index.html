@@ -85,10 +85,18 @@
             <p style = 'font-size:15px'> For more information about this study, you can refer to our <a href = "http://www.dcsc.tudelft.nl/~jalonsomora/docs/17-alonsomora-ridesharing-pnas.pdf">Proceedings of the National Academy of Sciences Article</a> and our <a href = "http://www.dcsc.tudelft.nl/~jalonsomora/docs/17-alonsomora-ridesharing-pnas-supplemental.pdf">full publication</a>. </p>
       
             <script>
-            $( "a" ).click(function() {
-            $( overlay ).slideUp();
-            });
+            $('#loadTaxis').click(function(){
+            $('.overlay').fadeOut(250);
+            $('.container').fadeOut(250);
+            $('.jumbotron').fadeOut(250);
+            $( this).fadeOut(250);
+            $('.box').fadeIn(250);
+            setTimeout(function(){
+                updateTimer();
+                iterate();
+            },500);
             </script>
+
       </div>
     </div>
  
