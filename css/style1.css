@@ -155,7 +155,7 @@ html,
         transform: translateY(-50%);
         color: #333333;
         width: 60%;
-        z-index: 430;
+        z-index: 440;
         display:none;
     }
     .areaChartBox {
@@ -169,30 +169,30 @@ html,
 
     .dateTimeBox {
         position: absolute;
-        top: 220px;
-        left: 15px;
-        width: 250px; 
+        top: 350px;
+        left: 20px;
+        width: 200px; 
         z-index: 430;
     }
      .legendBox {
         position: absolute;
         top: 65px;
-        left: 15px;
-        width: 250px;
+        left: 20px;
+        width: 200px;
         z-index: 430;
     }
      .newBox {
         position: absolute;
         top: 448px;
         left: 15px;
-        width: 250px;  
+        width: 200px;  
     }
 
     .totalsBox {
         position: absolute;
         bottom: 65px;
-        left: 15px;
-        width: 250px;
+        left: 20px;
+        width: 200px;
         z-index: 430;
     }
 
