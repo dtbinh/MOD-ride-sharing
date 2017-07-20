@@ -161,10 +161,9 @@ html,
     .areaChartBox {
         position: absolute;
         bottom:38px;
-        right:15px;
         left:15px;
-        width:auto;
-        height:140px;
+        width:250;
+        height:auto;
         z-index: 430;
     }
 
@@ -172,28 +171,28 @@ html,
         position: absolute;
         top: 220px;
         left: 15px;
-        width: 300px; 
+        width: 250px; 
         z-index: 430;
     }
      .legendBox {
         position: absolute;
         top: 65px;
         left: 15px;
-        width: 300px;
+        width: 250px;
         z-index: 430;
     }
      .newBox {
         position: absolute;
         top: 448px;
         left: 15px;
-        width: 300px;  
+        width: 250px;  
     }
 
     .totalsBox {
         position: absolute;
         bottom: 65px;
         left: 15px;
-        width: 300px;
+        width: 250px;
         z-index: 430;
     }
 
@@ -211,7 +210,7 @@ html,
     }
 
     .box {
-        background:rgba(130, 7, 7, 0.2);
+        background:rgba(130, 7, 7, 0.6);
         padding: 10px;
         box-sizing: border-box;
         border-radius: 6px;
